@@ -1,0 +1,9 @@
+# Core dependencies for UAV Pothole Recognition Repository (DA1)
+# Note: Requires Python 3.10+
+
+opencv-python>=4.8.0      # For image resizing, color space conversions, and CLAHE
+pillow>=9.5.0             # For image headers extraction, verification, and notebook display
+numpy>=1.24.0             # For matrix and numerical operations
+matplotlib>=3.7.0         # For Jupyter notebook visualizations and plotting
+pyyaml>=6.0               # For parsing and writing YOLO dataset.yaml configs
+tqdm>=4.65.0              # For displaying progress bars in CLI processing scripts
