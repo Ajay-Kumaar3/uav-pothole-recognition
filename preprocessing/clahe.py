@@ -21,6 +21,7 @@ except ImportError:
 
 # Set up path to allow importing data modules
 sys.path.append(str(Path(__file__).resolve().parent.parent / "data"))
+# pyrefly: ignore [missing-import]
 from dataset_loader import DatasetInspector, tqdm
 
 # Configure logging
