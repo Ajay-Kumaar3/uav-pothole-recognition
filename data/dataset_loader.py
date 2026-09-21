@@ -115,7 +115,7 @@ class DatasetInspector:
         # Look for annotations (.txt files for YOLO)
         self.label_paths = [
             p for p in self.dataset_root.rglob("*.txt")
-            if p.is_file() and p.name != "classes.txt" and "preprocessing" not in p.parts
+            if p.is_file() and p.name != "classes.txt" and not p.name.startswith("README") and "preprocessing" not in p.parts
         ]
 
         # Look for classes.txt
@@ -133,9 +133,9 @@ class DatasetInspector:
         # Check if train/val/test subdirectories exist under the dataset root
         has_splits = False
         for p in self.dataset_root.iterdir():
-            if p.is_dir() and p.name.lower() in ("train", "val", "validation", "test"):
+            if p.is_dir() and p.name.lower() in ("train", "val", "valid", "validation", "test"):
                 has_splits = True
-                split_name = "val" if p.name.lower() == "validation" else p.name.lower()
+                split_name = "val" if p.name.lower() in ("val", "valid", "validation") else p.name.lower()
                 # Find images in this split
                 split_imgs = [
                     img for img in self.image_paths if p in img.parents

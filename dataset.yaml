@@ -2,9 +2,9 @@
 # Generated automatically by dataset_loader
 
 path: ./dataset # dataset root dir
-train: .            # train images (relative to path)
-val: .              # val images (relative to path)
-test:               # test images (optional)
+train: train          # train images (relative to path)
+val: valid            # val images (relative to path)
+test: test            # test images (optional)
 
 # Class Names
 names:

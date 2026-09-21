@@ -1,0 +1,11 @@
+# YOLOv11 / YOLOv8 CLAHE-Enhanced Dataset Configuration
+# Evaluates detection performance on CIE LAB-space CLAHE enhanced & 640x640 normalized imagery
+
+path: ./preprocessing/output_resized
+train: train
+val: valid
+test: test
+
+names:
+  0: agujero
+  1: grietas

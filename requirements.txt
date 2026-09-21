@@ -7,3 +7,8 @@ numpy>=1.24.0             # For matrix and numerical operations
 matplotlib>=3.7.0         # For Jupyter notebook visualizations and plotting
 pyyaml>=6.0               # For parsing and writing YOLO dataset.yaml configs
 tqdm>=4.65.0              # For displaying progress bars in CLI processing scripts
+
+# Deep Learning Frameworks (DA2 & Model Training)
+torch>=2.0.0              # PyTorch tensor engine and gradient backpropagation
+torchvision>=0.15.0       # Vision transforms and backbone utilities
+ultralytics>=8.3.0        # YOLOv8 and YOLOv11 deep learning architecture suite

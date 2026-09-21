@@ -1,0 +1,11 @@
+# YOLOv11 / YOLOv8 Raw Dataset Configuration
+# Baseline evaluation on unprocessed dataset
+
+path: ./dataset
+train: train
+val: valid
+test: test
+
+names:
+  0: agujero
+  1: grietas
